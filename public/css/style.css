@@ -580,7 +580,38 @@ a {
         .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner p {
           font-size: 18px; }
 
-          .section-F1 {
+@media only screen and (max-width: 1250px) {
+  .section-F .secF-wrapper .quoteBox-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 30px;
+    justify-items: center; }
+  .section-F .secF-wrapper .quote-box {
+    width: 365px; } }
+@media only screen and (max-width: 845px) {
+  .section-F .secF-wrapper {
+    grid-gap: 50px !important;
+    padding: 100px 0 !important; }
+    .section-F .secF-wrapper .secF-p p {
+      text-align: center; }
+    .section-F .secF-wrapper .quoteBox-wrapper {
+      grid-template-columns: 1fr; } }
+@media only screen and (max-width: 450px) {
+  .section-F .secF-wrapper .quoteBox-wrapper .quote-box {
+    background-size: contain;
+    background-position: center;
+    padding: 114px 17px;
+    width: auto; }
+    .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner {
+      padding: 11px 15px;
+      width: 100%; }
+      .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner h4 {
+        font-size: 19px; }
+      .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner p {
+        font-size: 13px; } }
+
+ .section-F1 {
             background: url("../images/secD-bg.png") no-repeat center;
             background-size: cover;
             height: 690px;
@@ -626,36 +657,6 @@ a {
             .section-F1 .secF1-wrapper .child-wrapper p {
               font-size: 25px; } }
 
-@media only screen and (max-width: 1250px) {
-  .section-F .secF-wrapper .quoteBox-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    grid-gap: 30px;
-    justify-items: center; }
-  .section-F .secF-wrapper .quote-box {
-    width: 365px; } }
-@media only screen and (max-width: 845px) {
-  .section-F .secF-wrapper {
-    grid-gap: 50px !important;
-    padding: 100px 0 !important; }
-    .section-F .secF-wrapper .secF-p p {
-      text-align: center; }
-    .section-F .secF-wrapper .quoteBox-wrapper {
-      grid-template-columns: 1fr; } }
-@media only screen and (max-width: 450px) {
-  .section-F .secF-wrapper .quoteBox-wrapper .quote-box {
-    background-size: contain;
-    background-position: center;
-    padding: 114px 17px;
-    width: auto; }
-    .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner {
-      padding: 11px 15px;
-      width: 100%; }
-      .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner h4 {
-        font-size: 19px; }
-      .section-F .secF-wrapper .quoteBox-wrapper .quote-box .quote-box-inner p {
-        font-size: 13px; } }
 .section-G {
   background: url("../images/secG-bg.png") no-repeat;
   background-size: cover;
